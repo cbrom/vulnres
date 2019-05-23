@@ -1,0 +1,49 @@
+{
+    "results": [
+        {
+            "vulnTitle": "sqli",
+            "vulnIssues" : [
+                {   "file_name": "authController.php",
+                    "line_no": "line 54",
+                    "code": "if ($credits) {\nsite_header(\"Credits\", array(\"current\" => \"community\", 'css' => array('credits.css')));\necho $credits;\nsite_footer();\n}",
+                    "patch": "do this"
+                },
+                {
+                    "file_name": "authController.php",
+                    "line_no": "line 153",
+                    "code": "if ($credits) {\nsite_header(\"Credits\", array(\"current\" => \"community\", 'css' => array('credits.css')));\necho $credits;\nsite_footer();\n}",
+                    "patch": "do this"
+                },
+                {
+                    "file_name": "userController.php",
+                    "line_no": "line 83",
+                    "code": "if ($credits) {\nsite_header(\"Credits\", array(\"current\" => \"community\", 'css' => array('credits.css')));\necho $credits;\nsite_footer();\n}",
+                    "patch": "do this"
+                }
+            ]
+        
+        },
+        {
+            "vulnTitle": "xss",
+            "vulnIssues" : [
+                {   "file_name": "authController.php",
+                    "line_no": "line 61",
+                    "code": "if ($credits) {\nsite_header(\"Credits\", array(\"current\" => \"community\", 'css' => array('credits.css')));\necho $credits;\nsite_footer();\n}",
+                    "patch": "do this"
+                }
+            ]
+        },
+        {
+            "vulnTitle": "buffer_overflow",
+            "vulnIssues" : [
+                {
+                    "file_name": "authController.php",
+                    "line_no": "line 61",
+                    "code": "if ($credits) {\nsite_header(\"Credits\", array(\"current\" => \"community\", 'css' => array('credits.css')));\necho $credits;\nsite_footer();\n}",
+                    "patch": "do this"
+                }
+            ]
+        }
+    ],
+    "message": "Aha Le Reponse" 
+}
